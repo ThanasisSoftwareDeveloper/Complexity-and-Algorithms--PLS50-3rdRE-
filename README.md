@@ -1,3 +1,6 @@
+Topic 1: Solving Sudoku with stack and queue
+---------------------------------------------
+
 Topic 2: Classification algorithms
 ------------------------------------------------
 (otherwise: sorting algorithms)
@@ -42,3 +45,12 @@ Topic 3: Design of a search algorithm: finding the middle element of a table
 ----------------------------------------------------------------------------------
 Propose an algorithm that finds the median number in an unsorted matrix A with n different integer numbers (positive and negative), where n is an odd number (so the median number is unique), without being allowed to change the position of the numbers in A (e.g., you are not allowed to sort A) and without accessing additional memory beyond what you need for the local variables of the algorithm (e.g, you cannot commit memory equal to the size of your table to perform a sort, but you can use as much memory as you want, the size of which must be fixed and independent of the size of table A). Try to optimize it as much as possible. 
 What are the complexities O and Ω of your algorithm?
+
+Topic 4: Complexity of algorithms
+-------------------------------------
+Α) The operation of convolution in convolutional neural networks works as follows: We have a large input matrix, say a square two-dimensional matrix of dimension NN, and a significantly smaller matrix of dimension KK (K<<<N). Let A be the first matrix and B the second. The matrix B is usually called a "filter".
+The filter B is applied to each subregion of the KK-dimensional matrix A as follows: The elements of the filter are multiplied one-by-one with the corresponding elements of the subregion of table A and the individual products are summed. The result is placed in a position in the result matrix C, which has dimensions N-K+1N-K+1.
+The example below shows the input table A with dimensions 5×5, the filter B with dimensions 2×2 and the result table C with dimensions 4×4:
+The yellow area of Table A (given), combined with the entire Table B (given) resulted in the green cell of Table C (given). In particular, it applies:
+4×-0.6+2×-0.9+12×0.7+26×0.9=27.6
+Given two two-dimensional matrices A and B, of dimensions NN and KK respectively, write the pseudocode for calculating matrix C. What is the complexity of its computation?
