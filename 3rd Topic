@@ -1,0 +1,30 @@
+3rd Topic
+
+Finding the middle element in an unordered table A.
+Input: unordered n-element matrix A[], with n odd integers.
+Output: median
+Assume that the 1st element of the matrix is in position A[1].
+
+procedure Median (left, right, A[1..n] 
+int i, j , median, min, max;
+  if left < right //there are at least 2 elements in the table
+  && n%2 = 1 // n is an odd integer
+  && (left < 0 || left > 0) //elements of A[] positive or negative integers
+  && ( right > 0 || right < 0) // elements of A[] positive or negative integers
+  i = left ; j = right ; m = median // initialization
+  a. for (i = 1; i < n ; i++)
+    i. for(j = 1; j < n -1; j++)
+      1. if A[i] = min && A[j] = max
+        a. return m = (A[i]+A[j])/2;
+        
+Since the barometer command is 1.a.i.1 we have:
+T(n) = (n+1)*n*c (c constant)
+	= cn2 + cn 
+	= O (n2)	
+and Ω(logn) because they are searches.
+We could improve the algorithm by replacing line 1.i.a.i (2nd loop of for) with :
+for (j = 1; j < n - i - 1; j++)
+so that it doesn't keep looking for the largest one where smaller ones were already found.
+It will be faster, but still apply :
+O(n2) - worst time complexity, performance asymptotically clogged up and 
+Ω(logn) - better time complexity, performance asymptotically clogged down.
