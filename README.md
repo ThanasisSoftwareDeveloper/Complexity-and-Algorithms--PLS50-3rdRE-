@@ -1,4 +1,3 @@
-# Java-Eclipse--PLS50-3rdRE-
 Topic 2: Classification algorithms
 ------------------------------------------------
 (otherwise: sorting algorithms)
