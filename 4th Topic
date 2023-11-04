@@ -1,0 +1,29 @@
+4th Topic
+
+Α) The pseudocode for calculating table C:
+procedure Convolution(A[], B[], C[])
+int i, j, k, l, m, n // fields
+i = A.length // initialization
+j = A[1]. length // assumption that the 1st element is A[1].
+k = B.length
+L = B[1]. length //assumption that the 1st element is B[1]
+m = C.length
+n = C[1]. length // assumption that the 1st element is C[1]
+    1. for (i = 1; i < N+1 ; i++)
+      a. for(j = 1; j < N 1; j++)
+        i.for(k = 1; k < K +1; k++)
+          1. for(L = 1; L< K +1; L++)
+            a. for(m = 1; m < (N-K+1) -1; m++)
+merge Γ[m][n] = (A[i][j]*B[k][L] + A[i][j+1]*B[k][L+1] + A[i+1][j]*B[k+1][L] + A[i+1][j+1]*B[k+1][L+1])
+for(m = 1; m < (N-K+1) +1; m++)
+for(n = 1; n < (N-K+1) +1; n++)
+
+
+Assuming that barometer instruction is 1.a.i.1.a., and given the iterations in each for loop, its time complexity, is:
+
+T(n) = N*N*K*K  
+	= N2 * K2 
+	
+and is approximately of the formula
+T(n) = c*n2 , where c is a constant.
+We have a slow algorithm in theory.
