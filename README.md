@@ -36,5 +36,9 @@ MergeSort(1,2)
 MergeSort(1,1)
 MergeSort(2,2)
 Merge(1,1,2)
-
 3 ....
+
+Topic 3: Design of a search algorithm: finding the middle element of a table
+----------------------------------------------------------------------------------
+Propose an algorithm that finds the median number in an unsorted matrix A with n different integer numbers (positive and negative), where n is an odd number (so the median number is unique), without being allowed to change the position of the numbers in A (e.g., you are not allowed to sort A) and without accessing additional memory beyond what you need for the local variables of the algorithm (e.g, you cannot commit memory equal to the size of your table to perform a sort, but you can use as much memory as you want, the size of which must be fixed and independent of the size of table A). Try to optimize it as much as possible. 
+What are the complexities O and Ω of your algorithm?
