@@ -1,0 +1,82 @@
+In all algorithms, the first position of the table is assumed to be 1 (and not 0), while n represents the size of the table.
+
+α) Classification by insertion
+and according to the pronunciation the pseudocode is:
+procedure InsertionSort(A[],n)
+for (j=2; j<=n; ++j)
+key=A[j];
+i=j-1;
+while i>0 && A[i]>key
+swap(A[i], A[i+1])
+i=i-1;
+A[i+1]=key;
+
+
+b) Sort by selection
+and according to the pronunciation the pseudocode is:
+procedure SelectionSort(A[],n)
+for (i=1; i<n; ++i)
+min=i
+for (j=i+1; j<=n; ++j)
+if A[j]<A[min]
+min=j
+swap(A[i], A[min])
+
+
+c) Bubble classification
+and according to the pronunciation the pseudocode is:
+procedure BubbleSort(int A[], int n)
+for(i=1; i<n; i++)
+for(j=1; j<=n-i; j++)
+if A[j]>A[j+1]
+swap(A[j], A[j+1])
+
+
+d) Quick sorting
+QuickSort(1,n,A)
+procedure QuickSort(left, right, A[])
+if left<right
+i=left; j=right+1; pivot=A[left];
+repeat
+repeat
+i=i+1
+until A[i]>=pivot or i>right
+repeat
+j=j-1
+until A[j]<=pivot or j<left+1
+if i<j then swap(A[i], A[j])
+until j<=i
+if j>left
+swap(A[left], A[j]);
+QuickSort(left, j-1, A);
+QuickSort(j+1, right, A);
+
+
+(e) Classification by merge
+The MergeSort algorithm is also recursive. To sort the table A[], it must be called as:
+MergeSort(1,n,A,B)
+where B is an "auxiliary" matrix of size also n.
+procedure Merge(left, middle, right, A[], B[])
+first=left; second=middle+1; temp=left;
+while first<=middle and second<=right
+if A[first]<=A[second]
+B[temp]=A[first]; first++;
+else
+B[temp]=A[sedond]; second++;
+temp++;
+if first<=middle
+for k=first to middle
+B[temp]=A[k]; temp++;
+else
+for k=second to right
+B[temp]=A[k]; temp++;
+for k=left to right
+A[k]=B[k];
+
+procedure MergeSort(left, right, A[], B[])
+if left<right
+middle=(left+right) div 2;
+MergeSort(left, middle, A, B);
+MergeSort(middle+1, right, A, B);
+Merge(left, middle, right, A, B)
+
