@@ -54,3 +54,7 @@ The example below shows the input table A with dimensions 5×5, the filter B wit
 The yellow area of Table A (given), combined with the entire Table B (given) resulted in the green cell of Table C (given). In particular, it applies:
 4×-0.6+2×-0.9+12×0.7+26×0.9=27.6
 Given two two-dimensional matrices A and B, of dimensions NN and KK respectively, write the pseudocode for calculating matrix C. What is the complexity of its computation?
+
+Contact
+-------
+Feature requests, comments and requests for clarification should all be sent to the author at thanasis20007@gmail.com. I will try to respond quickly to all requests, so feel free to email me!
